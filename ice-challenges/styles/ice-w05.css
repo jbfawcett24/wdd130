@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #737373;
+}
+
+.circles {
+    display: flex;
+}
+
+.circles img {
+    border-radius: 50%;
+    width: 200px;
+    margin: 20px auto;
+    padding: 0;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #444444;
+}
+
+.imgbox {
+    display: grid;
+    height: 100%;
+}
+.center-fit {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+}
