@@ -240,6 +240,10 @@ nav {
 }
 
 /*BLOG PAGE STARTS HERE*/
+main {
+    display: block;
+}
+
 .blogTitle {
     color: var(--primary-color);
     font-family: var(--heading-font);
