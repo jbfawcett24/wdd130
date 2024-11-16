@@ -186,3 +186,12 @@ nav a:hover {
 .mainpage {
   width: 45%;
 }
+
+.wireframes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.wireframeImg {
+  width: 500px;
+  border: solid black 2px;
+}
