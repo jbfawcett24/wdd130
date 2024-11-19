@@ -55,7 +55,7 @@ header {
 
 }
 .navbar a:hover, .dropdown:hover {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 .dropdown-content {
     font-family: Lato;
@@ -64,7 +64,7 @@ header {
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 2;
     font-size: 14px;
 }
 .dropdown-content a {
@@ -115,11 +115,12 @@ main {
 }
 #class {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-left: 10px;
+    grid-template-columns: 1fr 600px;
+    margin-left: 15px;
 }
 #skills {
-    margin-left: 10px;
+    margin-left: 15px;
+    padding-bottom: 20px;
 }
 .table {
     grid-column: 2/3;
@@ -140,17 +141,23 @@ h2 {
     font-family: var(--heading-font);
 }
 h3 {
-    margin-left: 0px;
+
     font-family: var(--heading-font);
 }
 p {
     font-family: var(--paragraph-font);
     margin-bottom: 5px;
+    max-width: 85%;
 }
 li {
     margin-left: 50px;
 }
 
+.additional-table {
+    float: right;
+    padding-right: 400px;
+    padding-left: 20px;
+}
 /*footer*/
 footer
 {
