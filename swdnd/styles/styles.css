@@ -9,7 +9,18 @@
     --heading-font: "Orbitron", Helvetica, sans-serif;
     --paragraph-font: Lato, Helvetica, sans-serif;
 }
+*{
+    margin: 0;
+    padding: 0;
+}
 body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+header {
     margin: 0;
 }
 .navbar {
@@ -26,7 +37,7 @@ body {
     padding:10px;
 }
 .dropdown {
-    float: left;
+    float: right;
     overflow: hidden;
     height: inherit;
     padding-left: 20px;
@@ -72,26 +83,96 @@ body {
 }
 
 /*main*/
+main {
+    background-color: var(--accent2-color);
+    z-index: -2;
+    margin: 0;
+}
 .mainHeading {
     width: 100vw;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 .hero {
     width: 100%;
-    z-index: -1;
+    z-index: 0;
     display: flex;
     grid-row: 1/2;
-    grid-column: 1/2;
-    margin-top: -70px;
+    grid-column: 2/3;
+    margin-top: 0;
 }
 .welcome {
     font-family: "Orbitron", Arial;
     font-size: 50px;
     color: white;
     grid-row: 1/2;
-    grid-column: 1/2;
+    grid-column: 2/3;
     align-self: center;
     text-align: center;
+    z-index: 1;
     text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black, 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+}
+#class {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 10px;
+}
+#skills {
+    margin-left: 10px;
+}
+.table {
+    grid-column: 2/3;
+    grid-row: 1/12;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+#class h1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+h1 {
+    font-family: var(--heading-font);
+    font-size: 5em;
+}
+h2 {
+    margin-top: 10px;
+    font-family: var(--heading-font);
+}
+h3 {
+    margin-left: 0px;
+    font-family: var(--heading-font);
+}
+p {
+    font-family: var(--paragraph-font);
+    margin-bottom: 5px;
+}
+li {
+    margin-left: 50px;
+}
+
+/*footer*/
+footer
+{
+    background-color: var(--accent1-color);
+    margin: auto;
+    padding: 0;
+    height: 60px;
+    font-family: var(--paragraph-font);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer p {
+    text-align: left;
+    height: inherit;
+    margin: auto;
+    padding-top: 8px;
+    padding-left: 20px;
+    color: white;
+    font-size: 12px;
+}
+footer a {
+    color: white;
+    font-size: 16px;
 }
