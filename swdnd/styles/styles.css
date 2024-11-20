@@ -158,6 +158,20 @@ li {
     padding-right: 400px;
     padding-left: 20px;
 }
+.engineer {
+    display: grid;
+    grid-template-columns: 1fr 600px;
+    margin-left: 15px;
+    padding-bottom: 20px;
+}
+.engineer-skills {
+    grid-column: 1/2;
+    grid-row: 1/5;
+}
+.engineer-table {
+    grid-column: 2/3;
+}
+
 /*footer*/
 footer
 {
