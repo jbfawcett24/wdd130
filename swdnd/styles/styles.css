@@ -87,12 +87,13 @@ main {
     background-color: var(--accent2-color);
     z-index: -2;
     margin: 0;
+    padding: 0;
 }
 .mainHeading {
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr 10fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
 }
 .hero {
     width: 100%;
@@ -118,7 +119,7 @@ main {
     grid-template-columns: 1fr 600px;
     margin-left: 15px;
 }
-#skills {
+#skills, #race {
     margin-left: 15px;
     padding-bottom: 20px;
 }
@@ -170,6 +171,10 @@ li {
 }
 .engineer-table {
     grid-column: 2/3;
+}
+.intro {
+    grid-row: 2/3;
+    grid-column: 1/4;
 }
 
 /*footer*/
