@@ -123,11 +123,15 @@ main {
     margin-left: 15px;
     padding-bottom: 20px;
 }
+#class p {
+    grid-column: 1/2;
+}
 .table {
     grid-column: 2/3;
-    grid-row: 1/12;
+    grid-row: 2/12;
     margin-top: 20px;
     margin-right: 20px;
+    border: solid 3px var(--primary-color);
 }
 #class h1 {
     grid-column: 1/2;
@@ -159,6 +163,9 @@ li {
     padding-right: 400px;
     padding-left: 20px;
 }
+.additional-table img {
+    border: solid 3px var(--primary-color);
+}
 .engineer {
     display: grid;
     grid-template-columns: 1fr 600px;
@@ -172,9 +179,11 @@ li {
 .engineer-table {
     grid-column: 2/3;
 }
-.intro {
-    grid-row: 2/3;
-    grid-column: 1/4;
+.engineer-table img {
+    border: solid 3px var(--primary-color);
+}
+li {
+    font-family: var(--paragraph-font);
 }
 
 /*footer*/
