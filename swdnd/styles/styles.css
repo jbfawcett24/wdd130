@@ -195,6 +195,12 @@ li {
 li {
     font-family: var(--paragraph-font);
 }
+#race-picture {
+    float: right;
+    margin-right: 50px;
+    margin-left: 20px;
+    border: solid 3px var(--primary-color);
+}
 
 /*footer*/
 footer
