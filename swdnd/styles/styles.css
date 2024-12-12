@@ -89,9 +89,6 @@ main {
     margin: 0;
     padding: 0;
 }
-.homepage {
-    height: 90vh;
-}
 .Intro {
     width: 75%;
     margin: auto;
@@ -132,6 +129,12 @@ main {
 #skills, #race {
     margin-left: 15px;
     padding-bottom: 20px;
+}
+#race {
+    min-height: calc(100vh - 158px);
+}
+.homepage {
+    min-height: calc(100vh - 138px);
 }
 #class p {
     grid-column: 1/2;
